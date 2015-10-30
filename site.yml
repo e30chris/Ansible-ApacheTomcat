@@ -12,3 +12,9 @@
       - common
     tags:
       - common
+
+  - name: ensure Java is installed and configured
+    roles:
+      - java
+    tags:
+      - java

@@ -25,18 +25,18 @@ Including an example of how to use your role (for instance, with variables passe
          - { role: username.rolename, x: 42 }
 
 
- License
- -------
+License
+-------
 
- GNU General Public License v2.0
+GNU General Public License v2.0
 
- Author Information
- ------------------
+Author Information
+------------------
 
- Chris Livermore
+Chris Livermore
 
- [GitHub](https://github.com/e30chris)
+[GitHub](https://github.com/e30chris)
 
- [@e30chris](https://twitter.com/e30chris)
+[@e30chris](https://twitter.com/e30chris)
 
- [Sandors Systems Scribbles](http://sandorsscribbl.es/)
+[Sandors Systems Scribbles](http://sandorsscribbl.es/)

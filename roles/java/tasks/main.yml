@@ -1,2 +1,10 @@
 ---
 # tasks file for java
+
+  - name: install Java
+    yum:
+      name: "{{ java_package }}"
+      state: present
+
+  - name: print out the java version
+    command: java -version
