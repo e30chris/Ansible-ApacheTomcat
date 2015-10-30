@@ -9,7 +9,7 @@ Requirements
 
 Role Variables
 --------------
-
+service_user = the user that will run the playbook as sudo.
 
 Dependencies
 ------------

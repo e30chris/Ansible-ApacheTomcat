@@ -1,2 +1,3 @@
 ---
 # vars file for Ansible-ApacheTomcat
+service_user: chrisl
