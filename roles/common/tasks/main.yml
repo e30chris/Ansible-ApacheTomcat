@@ -1,6 +1,12 @@
 ---
 # tasks file for common
 
+  - name: enable EPEL repo for Centos
+    yum:
+      name: epel-release
+      state: latest
+    when: ansible_distribution == "Centos"
+
   - name: ensure updated of all yum packages
     yum:
       name: "*"
