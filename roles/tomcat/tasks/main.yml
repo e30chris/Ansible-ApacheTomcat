@@ -11,3 +11,11 @@
       name: tomcat
       state: started
       enabled: yes
+
+  - name: deploy the Tomcat sample app to verify
+    copy:
+      src: files/sample.war
+      dest: /usr/share/tomcat/webapps/
+      owner: root
+      group: root
+      mode: 0644
