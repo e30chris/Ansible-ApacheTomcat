@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A playbook to put a server in a state of running a Apache Tomcat server and a demo website.
+Common role for the Apache Tomcat playbook. This role should establish the base server state for running the rest of the roles.
 
 Requirements
 ------------
@@ -9,7 +9,7 @@ Requirements
 
 Role Variables
 --------------
-service_user = the user that will run the playbook as sudo.
+
 
 Dependencies
 ------------
@@ -23,6 +23,7 @@ Including an example of how to use your role (for instance, with variables passe
     - hosts: servers
       roles:
          - { role: username.rolename, x: 42 }
+
 
 License
 -------

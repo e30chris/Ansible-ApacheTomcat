@@ -1,2 +1,4 @@
 ---
 # vars file for Ansible-ApacheTomcat
+service_user: chrisl
+java_package: java-1.7.0-openjdk.x86_64

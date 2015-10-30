@@ -1,0 +1,13 @@
+---
+# tasks file for tomcat
+
+  - name: ensure Tomcat is installed
+    yum:
+      name: tomcat.noarch
+      state: latest
+
+  - name: ensure Tomcat is started at boot time and always running
+    service:
+      name: tomcat
+      state: started
+      enabled: yes

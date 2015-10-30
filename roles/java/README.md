@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A playbook to put a server in a state of running a Apache Tomcat server and a demo website.
+A role to put a server in a state where it has Java installed and configured.
 
 Requirements
 ------------
@@ -9,7 +9,9 @@ Requirements
 
 Role Variables
 --------------
-service_user = the user that will run the playbook as sudo.
+
+  - java_package = the version of Java to install - example java-1.8.0-openjdk.x86_64
+
 
 Dependencies
 ------------

@@ -1,0 +1,10 @@
+---
+# tasks file for java
+
+  - name: ensure Java is installed
+    yum:
+      name: java-1.7.0-openjdk.x86_64
+      state: present
+
+  - name: print out the java version
+    command: java -version
