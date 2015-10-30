@@ -7,4 +7,7 @@
       state: present
 
   - name: print out the java version
-    command: java -version
+    shell: /usr/bin/java -version
+    register: result
+
+  - debug: var=result

@@ -6,11 +6,11 @@
       name: tomcat.noarch
       state: latest
 
-  - name: ensure Tomcat is started at boot time and always running
-    service:
-      name: tomcat
-      state: started
-      enabled: yes
+  - name: print out Tomcat version
+    shell: /usr/sbin/tomcat version
+    register: result
+
+  - debug: var=result
 
   - name: deploy the Tomcat sample app to verify
     copy:
@@ -19,3 +19,9 @@
       owner: root
       group: root
       mode: 0644
+
+  - name: ensure Tomcat is started at boot time and always running
+    service:
+      name: tomcat
+      state: started
+      enabled: yes
