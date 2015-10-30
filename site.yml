@@ -1,14 +1,14 @@
 ---
   # Site.yml to manage the ApacheTomcat Playbook.
 
-- hosts: all
-  remote_user: "{{ service_user }}"
-  sudo: yes
-  vars_files:
-    - group_vars/main.yml
+  - hosts: all
+    remote_user: "{{ service_user }}"
+    sudo: yes
+    vars_files:
+      - group_vars/main.yml
 
-- name: common server state tasks
-  roles:
-    - common
-  tags:
-    - common
+  - name: common server state tasks
+    roles:
+      - common
+    tags:
+      - common
