@@ -5,7 +5,7 @@
     yum:
       name: epel-release
       state: latest
-    when: ansible_distribution == "Centos"
+    when: ansible_distribution == "CentOS"
 
   - name: ensure updated of all yum packages
     yum:

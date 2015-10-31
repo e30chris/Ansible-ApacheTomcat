@@ -3,7 +3,7 @@
 
   - name: ensure Tomcat is installed
     yum:
-      name: tomcat.noarch
+      name: tomcat
       state: latest
 
   - name: print out Tomcat version
