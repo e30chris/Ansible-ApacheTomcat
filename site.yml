@@ -2,7 +2,7 @@
   # Site.yml to manage the ApacheTomcat Playbook.
 
   - hosts: all
-    remote_user: root
+    remote_user: chrisl
     sudo: yes
     vars_files:
       - group_vars/main.yml
@@ -14,7 +14,7 @@
 
   - name: common server state tasks
     hosts: all
-    remote_user: root
+    remote_user: chrisl
     sudo: yes
     roles:
       - common
@@ -23,7 +23,7 @@
 
   - name: ensure Java is installed and configured
     hosts: all
-    remote_user: root
+    remote_user: chrisl
     sudo: yes
     roles:
       - java
@@ -32,7 +32,7 @@
 
   - name: ensure Tomcat is installed and configured
     hosts: all
-    remote_user: root
+    remote_user: chrisl
     sudo: yes
     roles:
       - tomcat

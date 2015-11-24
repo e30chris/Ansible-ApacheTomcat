@@ -1,4 +1,4 @@
-Role Name
+Ansible Apache Tomcat
 =========
 
 A playbook to put a server in a state of running a Apache Tomcat server and a demo website.
